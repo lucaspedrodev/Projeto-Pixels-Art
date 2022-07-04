@@ -1,17 +1,27 @@
-#color-pallete{
-    width: 1;
-    height: 1;
+#color-palette{
+
 }
-
-
-.color div {
-
-    border: 1px black solid;
+.color {
     width: 70px;
     height: 70px;
     display: inline-block;
-    margin-right: 1px;
-    
+    border: 1px black solid;
+
 }
 
 
+.preto {
+    background-color: black;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+.verde {
+    background-color: green;
+}
