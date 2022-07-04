@@ -1,23 +1,17 @@
-.cores div {
+#color-pallete{
+    width: 1;
+    height: 1;
+}
+
+
+.color div {
+
     border: 1px black solid;
     width: 70px;
-    min-height: 70px;
+    height: 70px;
     display: inline-block;
     margin-right: 1px;
+    
 }
 
-.preto {
-    background-color: black;
-}
 
-.azul {
-    background-color: blue;
-}
-
-.verde {
-    background-color: green;
-}
-
-.vermelho {
-    background-color: red;
-}
