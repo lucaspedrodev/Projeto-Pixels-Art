@@ -1,8 +1,23 @@
 .cores div {
     border: 1px black solid;
-    width: 80px;
-    min-height: 80px;
+    width: 70px;
+    min-height: 70px;
     display: inline-block;
-    margin-right: 10px;
-    text-align: center;
-     }
+    margin-right: 1px;
+}
+
+.preto {
+    background-color: black;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.vermelho {
+    background-color: red;
+}
