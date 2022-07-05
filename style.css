@@ -28,23 +28,24 @@
 
 
 #pixel-board {
-    size: 5;  
-    height: 400px;
-    width: 400px;
+    size: 5;
+    height: 220px;
+    width: 220px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    gap: 3px;
-    padding: 3px;
-background-color: black;
+    gap: 1px;
+    padding: 1px;
+    background-color: black;
 }
 
 .pixel {
     background-color: white;
-    border-radius: 1px;
-    
+
+    border: 1px black solid;
+    width: 40px;
+    height: 40px;
+
 }
 
-.selected {
-
-}
+.selected {}
