@@ -1,6 +1,5 @@
-#color-palette{
+#color-palette {}
 
-}
 .color {
     width: 70px;
     height: 70px;
@@ -24,4 +23,23 @@
 
 .verde {
     background-color: green;
+}
+
+
+
+#pixel-board {
+     
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;
+    padding: 2px;
+background-color: black;
+}
+
+.pixel {
+    background-color: white;
+    border-radius: 1px; color: black ;
 }
