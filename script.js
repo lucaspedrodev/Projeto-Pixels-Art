@@ -1,4 +1,6 @@
 const quadroDePixel = document.getElementById('pixel-board')
+const clic = document.getElementsByClassName('selected')
+
 
 
 function pixels (tamanho){
@@ -8,6 +10,9 @@ function pixels (tamanho){
         const classPixel = document.createElement('classPixel')
         classPixel.classList.add('pixel')
         quadroDePixel.appendChild(classPixel)
+
+
     }
 }
 pixels(5)
+
