@@ -2,6 +2,14 @@ const quadroDePixel = document.getElementById('pixel-board')
 const clic = document.getElementsByClassName('selected')
 const PaletaCores = document.getElementById('color-palette')
 const filhosCores = PaletaCores.children
+const CoresPaleta = ['black', 'red', 'green', 'blue']
+
+
+
+
+
+
+
 
 // 5
 
@@ -11,13 +19,19 @@ function pixels(tamanho) {
     for (let i = 0; i < tamanho * tamanho; i += 1) {
         const classPixel = document.createElement('classPixel')
         classPixel.classList.add('pixel')
-        classPixel.addEventListener('click', function () {
-            console.log('teste');
-        })
-
+        classPixel.addEventListener('click', colocaCorPixel)
         quadroDePixel.appendChild(classPixel)
-        i
+        
     }
+}
+
+function colocaCorPixel(e){
+
+
+    const separaCor = document.querySelector('.selected')
+    console.log(separaCor.style);
+    e.target.style.backgroundColor = separaCor.style.backgroundColor
+
 }
 
 pixels(5)
@@ -35,14 +49,51 @@ pixels(5)
 
 //}
 
-PaletaCores.addEventListener('click', cores)
+// PaletaCores.addEventListener('click', cores)
+
+function criaPaletaDeCores (arrayCores) {
+    const paletaCores = document.querySelector('#color-palette')
+    
+   for (const cor of arrayCores) {
+    let div = document.createElement('div')    
+    div.classList.add('color')
+     if (cor === 'black') {
+    div.classList.add('selected')    
+}
+
+    div.style.backgroundColor = cor
+    div.addEventListener('click', cores)
+     paletaCores.appendChild(div)
+       }
+    console.log(paletaCores); 
+}
+
+criaPaletaDeCores(CoresPaleta)
+
+
 
 function cores(event) {
-    for (let i = 0; i < filhosCores.length; i += 1) {
-        if (filhosCores[i].classList.contains('selected')) {
-            filhosCores[i].classList.remove('selected');
-        } event.target.classList.add('selected')
-    }
+    const separaCor = document.querySelector('.selected').classList.remove('selected')
+   
+    event.target.classList.add('selected')
+
 }
+    // for (let i = 0; i < filhosCores.length; i += 1) {
+//         if (filhosCores[i].classList.contains('selected')) {
+//             filhosCores[i].classList.remove('selected');
+//         } event.target.classList.add('selected')
+//         console.log('Pegar cor');
+
+//     }
+// }
+
+
+
+
+
+
+
+
+
 
 

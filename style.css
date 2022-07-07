@@ -7,10 +7,11 @@
     border: 1px black solid;
 
 }
-
+/* 
 
 .preto {
-    background-color: black;
+    background-color: black ;
+
 }
 
 .azul {
@@ -23,7 +24,7 @@
 
 .verde {
     background-color: green;
-}
+} */
 
 
 
@@ -49,3 +50,5 @@
 }
 
 .selected {}
+
+    
